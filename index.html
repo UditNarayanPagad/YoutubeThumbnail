@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Thumbnail</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family :Arial,sans-serif;
+        }
+        .addBox{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            border: 2px solid black;
+            margin: 3px 5px;
+            background-color: black;
+            color: white;
+            border-radius: .5rem;
+        }
+        .desc{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+           
+        }
+        .desc h2{
+            font-weight: 500;
+        }
+        .desc p{
+            color: rgba(255, 255, 255, 0.671);
+            font-weight: 400;
+        }
+        .thumbnail{
+            margin: 5px 10px;
+        }
+        img{
+            border-radius: 8px;
+            height: 90px;
+            width: 150px;
+        }
+        .main{
+            display: flex;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            background-color: bisque;
+        }
+        input{
+            padding: 3px;
+            margin: 4px;
+        }
+        button{
+            width: 60%;
+            margin: 4px;
+            padding: 2px;
+            background-color: rgb(3, 144, 97);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="addBox">
+            <div class="box">
+                <div class="thumbnail">
+                    <img src="thumbnail.webp" alt="">
+                </div>
+                <div class="desc">
+                   <h2> Installing VS code & How website works | Sigma Web development Course - Tutorial #1</h2>
+                    <p class="views">
+                       CodeWithHarry . 272k views . 2 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+             <form action="" id="myForm">
+                <input type="text" placeholder="Enter Video Name" id="name">
+                <input type="text" placeholder="Chanel Name" id="chanel">
+                <input type="text" placeholder="Views" id="views">
+                <input type="text" placeholder="Time period" id="time">
+                <button id="create" type="submit">Create</button>
+             </form>
+        </div>
+    </div>
+    <script src="thumb.js"></script>
+</body>
+</html>
